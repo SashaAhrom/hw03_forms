@@ -93,10 +93,11 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMPTY_VALUE_DISPLAY = '-пусто-'
+PAGINATOR_COUNT = 10
+
 
 LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'posts:index'
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-
 EMAIL_FILE_PATH = path.join(BASE_DIR, 'sent_emails')
